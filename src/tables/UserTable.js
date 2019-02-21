@@ -14,18 +14,18 @@ const UserTable = props => {
       {props.users.length > 0 ? (
         props.users.map(user => (
           <tr key={user.id}>
-						<td>{user.name}</td>
-						<td>{user.username}</td>
-						<td>
-							<button type='button' className='btn btn-outline-dark'>Edit</button>
-							<button type='button' className='btn btn-outline-dark'>Delete</button>
-						</td>
-					</tr>
+            <td>{user.name}</td>
+            <td>{user.username}</td>
+            <td>
+              <button type='button' className='btn btn-outline-dark'>Edit</button>
+              <button type='button' className='btn btn-outline-dark'>Delete</button>
+            </td>
+          </tr>
         ))
       ) : (
         <tr>
-					<td colSpan={3}>No users</td>
-				</tr>
+          <td colSpan={3}>No users</td>
+        </tr>
       )}
       </tbody>
     </table>
