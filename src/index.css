@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+.table thead th {
+  border-top : none;
+}
+
 button, 
 .btn {
 	margin-bottom: 0 !important;
