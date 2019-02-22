@@ -10,11 +10,11 @@ const EditUserForm = ({ updateUser, currentUser, setEditing }) => {
 
   return (
     <form onSubmit={ event => {
-				event.preventDefault();
-				updateUser(user.id, user);
-			}}
-		>
-			<div className='form-group'>
+        event.preventDefault();
+        updateUser(user.id, user);
+      }}
+    >
+      <div className='form-group'>
         <label>Name</label>
         <input className='form-control' 
               type="text" 
@@ -22,7 +22,7 @@ const EditUserForm = ({ updateUser, currentUser, setEditing }) => {
               value={user.name} 
               onChange={handleInputChange} />
       </div>
-			<div className='form-group'>
+      <div className='form-group'>
         <label>Username</label>
         <input className='form-control' 
                 type="text" 
@@ -30,9 +30,9 @@ const EditUserForm = ({ updateUser, currentUser, setEditing }) => {
                 value={user.username} 
                 onChange={handleInputChange} />
       </div>
-			<button className='btn btn-outline-dark'>Update user</button>
-			<button onClick={() => setEditing(false)} className='btn btn-outline-dark'>Cancel</button>
-		</form>
+      <button className='btn btn-outline-dark'>Update user</button>
+      <button onClick={() => setEditing(false)} className='btn btn-outline-dark'>Cancel</button>
+    </form>
   );
 
 }
