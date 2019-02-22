@@ -10,8 +10,8 @@ const AddUserForm = ({ addUser }) => {
     setUser({ ...user, [name]: value });
   }
 
-	return (
-		<form onSubmit={event => {
+  return (
+    <form onSubmit={event => {
       event.preventDefault();
       if(!user.name || !user.username) return
 
@@ -26,7 +26,7 @@ const AddUserForm = ({ addUser }) => {
               value={user.name} 
               onChange={handleInputChange} />
       </div>
-			<div className='form-group'>
+      <div className='form-group'>
         <label>Username</label>
         <input className='form-control' 
                 type="text" 
@@ -34,9 +34,9 @@ const AddUserForm = ({ addUser }) => {
                 value={user.username} 
                 onChange={handleInputChange} />
       </div>			
-			<button className='btn btn-outline-dark'>Add new user</button>
-		</form>
-	);
+      <button className='btn btn-outline-dark'>Add new user</button>
+    </form>
+  );
 }
 
 export default AddUserForm;
