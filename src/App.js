@@ -27,7 +27,7 @@ const App = () => {
 
   const editUser = user => {
     setEditing(true);
-    setCurrentUser({ id: user.id, user: user.name, username: user.username })
+    setCurrentUser({ id: user.id, name: user.name, username: user.username })
   }
 
   const updateUser = (id, updatedUser) => {
