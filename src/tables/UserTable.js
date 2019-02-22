@@ -3,7 +3,7 @@ import React from 'react';
 const UserTable = ({ users }) => {
   return (
     <table className='table'>
-      <thead className='thead-dark'>
+      <thead>
         <tr>
           <th scope='col'>Name</th>
           <th scope='col'>Username</th>
